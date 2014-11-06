@@ -3,12 +3,59 @@
 <head>
   <link rel="stylesheet" href="css/normalize.css"/>
   <link rel="stylesheet" href="css/uncharted.css"/>
+  <link rel="stylesheet" href="css/grid.css"/>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <h1>Uncharted</h1>
+  <div id="container">
+    <div class="grid">
+
+      <div id="header" class="module clearfix section">
+        <div class="col-1-3 nav">
+          <div class="col-1-2">
+            <a>Team</a>
+          </div>
+          <div class="col-1-2">
+            <a>Assignments</a>
+          </div>
+        </div>
+        <div id="title" class="col-1-3">Uncharted</div>
+        <div class="col-1-3 nav">
+          <div class="col-1-2">
+            <a>Team</a>
+          </div>
+          <div class="col-1-2">
+            <a>Assignments</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="team" class="module section">
+        <div class="section-header">Team</div>
+      </div>
+
+      <div id="assignments" class="module section">
+        <div class="section-header">Assignments</div>
+        <div id="assignments-grid" class="clearfix">
+          <div class="col-1-3">
+            <div class="assignment">Assignment 1</div>
+            <div class="assignment">Assignment 4</div>
+          </div>
+          <div class="col-1-3">
+            <div class="assignment">Assignment 2</div>
+            <div class="assignment">Assignment 5</div>
+          </div>
+          <div class="col-1-3">
+            <div class="assignment">Assignment 3</div>
+            <div class="assignment">Assignment 6</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 
 </html>

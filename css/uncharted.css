@@ -1,4 +1,48 @@
 body {
-  font-family: 'Lato', sans-serif;
-  margin: 0px;  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11pt;
+  text-align: center;
+}
+
+#header {
+  padding-top: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+#title {
+  font-size: 36pt;
+}
+
+#container {
+  margin-right: 10%;
+  margin-left: 10%;
+  border-right: 1px solid #EBEBEB;
+  border-left: 1px solid #EBEBEB;
+  height: 100%;
+}
+
+.section-header {
+  font-size: 20pt;
+}
+
+.assignment {
+  border: 1px solid #EBEBEB;
+  background-color: #F7F7F7;
+  margin: 10px;
+}
+
+#assignments-grid {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav {
+  line-height: 65px;
+}
+
+a:hover {
+  text-decoration: underline;
 }
