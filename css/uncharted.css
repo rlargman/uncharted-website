@@ -20,9 +20,6 @@ body {
 #container {
   margin-right: 10%;
   margin-left: 10%;
-  border-right: 1px solid #EBEBEB;
-  border-left: 1px solid #EBEBEB;
-  height: 100%;
 }
 
 .section-header {
