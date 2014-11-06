@@ -13,6 +13,7 @@ body {
 }
 
 #title {
+  font-family: 'Indie Flower', cursive;
   font-size: 36pt;
 }
 
@@ -25,6 +26,8 @@ body {
 }
 
 .section-header {
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 10px;
   font-size: 20pt;
 }
 
@@ -32,6 +35,7 @@ body {
   border: 1px solid #EBEBEB;
   background-color: #F7F7F7;
   margin: 10px;
+  padding: 10px;
 }
 
 #assignments-grid {
@@ -45,4 +49,18 @@ body {
 
 a:hover {
   text-decoration: underline;
+}
+
+.team-pic {
+  height: 100px;
+  width: 100px;
+  -webkit-border-radius: 50%; 
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.name {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: bold;
 }
