@@ -13,8 +13,9 @@ body {
 }
 
 #title {
-  font-family: 'Indie Flower', cursive;
-  font-size: 36pt;
+  font-family: 'Amatic SC', cursive;
+  font-size: 50pt;
+  line-height: 85px;
 }
 
 #container {
@@ -23,9 +24,9 @@ body {
 }
 
 .section-header {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Amatic SC', cursive;
   margin-bottom: 10px;
-  font-size: 20pt;
+  font-size: 30pt;
 }
 
 .assignment {
@@ -41,7 +42,9 @@ body {
 }
 
 .nav {
-  line-height: 65px;
+  line-height: 85px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 20pt;
 }
 
 a:hover {
