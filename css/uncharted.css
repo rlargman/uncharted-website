@@ -16,6 +16,7 @@ body {
   font-family: 'Amatic SC', cursive;
   font-size: 50pt;
   line-height: 85px;
+  color: #474747;
 }
 
 #container {
@@ -27,29 +28,46 @@ body {
   font-family: 'Amatic SC', cursive;
   margin-bottom: 10px;
   font-size: 30pt;
+  color: #474747;
 }
 
 .assignment {
   border: 1px solid #EBEBEB;
-  background-color: #F7F7F7;
   margin: 10px;
   margin-bottom: 20px;
   padding: 10px;
+  height: 100px;
+  line-height: 100px;
+  background-image: url("../images/pig.jpg");
+  color: white;
+  opacity: 0.5;  
+} 
+
+.assignment:hover {
+  opacity: 1; 
 }
 
 #assignments-grid {
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .nav {
   line-height: 85px;
   font-family: 'Amatic SC', cursive;
   font-size: 20pt;
+  color: #474747;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #474747;
 }
 
 a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid pink;
+}
+
+.team-desc {
+  padding: 10px;
 }
 
 .team-pic {
