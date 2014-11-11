@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 11pt;
   text-align: center;
+  color: #474747;
 }
 
 #header {
@@ -22,7 +23,6 @@ body {
   font-family: 'Amatic SC', cursive;
   font-size: 50pt;
   line-height: 85px;
-  color: #474747;
 }
 
 #container {
@@ -34,7 +34,6 @@ body {
   font-family: 'Amatic SC', cursive;
   margin-bottom: 10px;
   font-size: 30pt;
-  color: #474747;
 }
 
 .hidden {
@@ -49,7 +48,7 @@ body {
 
 .assignment-text {
   font-family: 'Amatic SC', cursive;
-  font-size: 40pt;
+  font-size: 25pt;
   text-shadow:
    -1px -1px 0 #000,  
     1px -1px 0 #000,
