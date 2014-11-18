@@ -37,7 +37,7 @@ a {
 .section-header {
   font-family: 'Amatic SC', cursive;
   margin-bottom: 15px;
-  font-size: 30pt;
+  font-size: 35pt;
 }
 
 .hidden {
@@ -57,12 +57,10 @@ a {
 
 .assignment-first {
   margin-right: 10px;
-  margin-bottom: 20px;
 }
 
 .assignment-second {
   margin-left: 10px;
-  margin-bottom: 20px;
 }
 
 .assignment-text {
@@ -166,4 +164,31 @@ a:hover {
   margin-bottom: 10px;
   margin-top: 10px;
   font-weight: bold;
+}
+
+.icon-button {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.icon-button-image {
+  height: 150px;
+  width: 150px;
+  -webkit-border-radius: 50%; 
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px dashed pink;
+  margin-bottom: 10px;
+}
+
+.icon-button-image:hover {
+  border: 1px solid pink;
+  background-color: pink;
+}
+
+.icon-button-text {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
