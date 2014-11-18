@@ -103,6 +103,21 @@ body {
   background-image: url("../images/earthporn6.jpg");
 }
 
+#present-1::after {
+  background-image: url("../images/present1.jpg");
+}
+
+#present-2::after {
+  background-image: url("../images/present2.jpg");
+}
+
+#present-3::after {
+  background-image: url("../images/present3.jpg");
+}
+
+#present-4::after {
+  background-image: url("../images/present4.jpg");
+}
 .nav {
   line-height: 85px;
   font-family: 'Amatic SC', cursive;
