@@ -20,7 +20,7 @@ a {
 }
 
 .section {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 #title {
@@ -52,26 +52,17 @@ a {
 .vertical-line {
   width: 1px;
   background-color: #cccccc;
-  height: 70px;
+  height: 100px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-#hi-fi-prototype {
-}
-
-#med-fi-prototype {
-}
-
-#low-fi-prototype {
 }
 
 .assignment {
   height: 100px;
   position: relative;
   box-sizing: border-box;
+  background-color: rgba(256, 256, 256, 0.7);
 } 
 
 .assignment-first {
@@ -219,4 +210,9 @@ a:hover {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.presentation-icon {
+  height: 100px;
+  width: 100px;
 }
