@@ -20,7 +20,7 @@ a {
 }
 
 .section {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 #title {
@@ -47,6 +47,25 @@ a {
 .centered {
   margin-right: 25%;
   margin-left: 25%;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: #cccccc;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#hi-fi-prototype {
+}
+
+#med-fi-prototype {
+}
+
+#low-fi-prototype {
 }
 
 .assignment {
@@ -172,19 +191,28 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.icon-button-image {
-  height: 150px;
-  width: 150px;
+.icon-button-image-wrapper {
   -webkit-border-radius: 50%; 
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 1px dashed pink;
-  margin-bottom: 10px;
+  border: 1px dashed #FFC0CB;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
+  padding: 20px;
 }
 
-.icon-button-image:hover {
-  border: 1px solid pink;
-  background-color: pink;
+.icon-button-image-wrapper:hover {
+  border: 1px solid #FFC0CB;
+  background-color: #FFC0CB;
+}
+
+.icon-button-image {
+  height: 100%;
+  width: 100%;
+  margin: auto;
 }
 
 .icon-button-text {
