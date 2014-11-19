@@ -1,0 +1,372 @@
+
+
+
+
+
+<!doctype html>
+	<head> 
+		<meta charset="utf-8">
+
+		<title>Uncharted - Proto.io</title>   
+
+			<meta name="HandheldFriendly" content="True">
+			<meta name="MobileOptimized" content="#width#"> 
+
+			
+			
+			
+			<meta name="viewport" content="width=device-width, minimum-scale=0.50, maximum-scale=0.50, initial-scale=0.50, user-scalable=no, target-densitydpi=device-dpi" /> 
+				<meta name="apple-mobile-web-app-capable" content="yes" />
+				<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+			
+
+			<meta name="format-detection" content="telephone=no">
+			
+			
+			<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/branding/apple-touch-icon-retina.png"> <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/branding/apple-touch-icon-ipad.png"/> <link rel="apple-touch-icon-precomposed" href="./assets/branding/apple-touch-icon.png"/> <link rel="shortcut icon" href="./assets/branding/apple-touch-icon.png"> 
+						
+				        <link href="./assets/branding/startup.png" media="(device-width: 320px)" rel="apple-touch-startup-image">
+				       
+				        
+				        <link href="./assets/branding/startup-retina.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+				        
+				        
+				        <link href="./assets/branding/startup-568.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+				        
+				        
+				        <link href="./assets/branding/startup-ipad.png" media="(device-width: 768px) and (orientation: portrait)" rel="apple-touch-startup-image">
+				        
+				        
+				        <link href="./assets/branding/startup-ipad-landscape.png" media="(device-width: 768px) and (orientation: landscape)" rel="apple-touch-startup-image">
+				        
+						
+				        <link href="./assets/branding/startup-ipad-retina.png" media="(device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+				        
+				        <link href="./assets/branding/startup-ipad-landscape-retina.png" media="(device-width: 768px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+					
+
+			<style>
+				body * {-webkit-text-size-adjust: 100%;}
+			</style>
+		 
+
+						
+		
+		<meta http-equiv="cleartype" content="on"> 
+
+		
+		
+		
+		
+		
+				
+				
+
+				<link rel="stylesheet" href="./stylesheets/player-engine-min.css?5.10.8.4" />
+				<script type="text/javascript" src="./scripts/player-engine-min.js?5.10.8.4"></script>
+
+
+				<link type="text/css" href="./libraries/common/components.css" rel="Stylesheet" /> 	
+				<script type="text/javascript" src="./libraries/common/components.js"></script> 
+				
+				
+
+				
+						<link type="text/css" href="./libraries/icons/components.css" rel="Stylesheet" /> 	
+						<script type="text/javascript" src="./libraries/icons/components.js"></script> 
+					
+						<link type="text/css" href="./libraries/ios7/components.css" rel="Stylesheet" /> 	
+						<script type="text/javascript" src="./libraries/ios7/components.js"></script> 
+					
+
+				<script type="text/javascript" src="./data/data.js"></script> 	
+				
+
+				
+
+				
+				
+					
+		<style>
+			
+			/* 	annam v5.7.7 removing this because it is interfering with "position fixed" for mpoverlay="1" 
+				http://stackoverflow.com/questions/2637058/positions-fixed-doesnt-work-when-using-webkit-transform
+				hopefully this bug doesnt exist anymore? :/
+			*/
+
+			
+			.landscape, .landscape .prx-page {
+				min-height: 640px;
+			}
+			
+			.portrait, .portrait .prx-page {
+				min-height: 1136px;
+			}
+
+			
+				#loader {
+					background-image: url(images/editor/loader.gif) !important;
+				}
+			
+			
+		</style>
+		
+			<script type="text/javascript">
+				prx.orientation = window.innerWidth>window.innerHeight?"landscape":"portrait";
+				
+				prx.spaces = false;
+				
+				
+								
+				if (window.screen.height==568) { // iPhone 4 (iPhone5/iOS6)
+					
+					//document.querySelector("meta[name=viewport]").content="width=320.1";
+					document.querySelector("meta[name=viewport]").content="width=320.1, minimum-scale=0.50, maximum-scale=0.50, initial-scale=0.50, user-scalable=no, target-densitydpi=device-dpi";
+				}
+				
+					var sLinkedAssets = [];
+					
+
+				
+				
+
+				prx.url['account'] = 'https://raissa.proto.io';
+				prx.url['staticassets'] = 'https://gal.proto.io';
+				
+				
+				
+					prx.device = 'default';
+				
+				
+				prx.device_library = 'ios7';				
+				prx.devices[prx.device] = {
+						name: prx.device
+						,caption: "iPhone 5/5S"
+						,defaultOrientation: 'portrait'
+						,portrait_applies: 1 //new
+						,portrait: [640,1136]
+						,landscape_applies: 1 //new
+						,landscape: [1136,640]
+						,allow_orientation_change: 1 //new
+						,statusbar_skin: 'shared' // new
+						,statusbarheightportrait: 40
+						,statusbarheightlandscape: 40	
+						,navigationbar_skin: 'default' //new
+						,navigationbarheightportrait: 0
+						,navigationbarheightlandscape: 0	
+						
+						,normalportrait: [640,1136]
+						,normallandscape: [1136,640]
+						,device_s3bucket: 'f2b0a5a2-27e8-47b3-977a-cc21325d0d37'
+										
+				}
+		
+				//log(prx.devices);
+				
+				prx.mobilebrowser = !0; 
+				
+
+				prx.embed = 0;
+
+				
+				prx.filename = '9c3526da-fd16-44d5-a338-307dde09a806';
+				prx.ron = '0'; // Reviewers LIVE PREVIEW is ON
+				prx.url.devices = 'https://staticprotoio-proto.netdna-ssl.com/devices';
+				prx.save = 'false'; 
+		
+				prx.statusbar = '1';
+				prx.statusbarapplies = '1';		
+		
+				prx.navigationbar = '0';
+				prx.navigationbarapplies = '0';
+				
+				
+				prx.url.static = 'https://staticprotoio-proto.netdna-ssl.com';
+				prx.vup = '1';
+				
+					prx.v = '0';				
+				
+				prx.rl = '1'; 
+				prx.s3b = 'raissa-106844-proto';
+				prx.projectid = '9c3526da-fd16-44d5-a338-307dde09a806';
+				prx.initialpageid = false;
+				prx.deviceorientation = 'portrait';
+				prx.export2html = '1';
+				
+				 
+							
+					function getAssetUrl(asset) {
+						var assetType = asset.assetType;
+						var url = asset.url;
+						
+						if (typeof(asset.targetSrc) != "undefined") {
+							url =  './assets/' + asset.targetSrc;	
+						} else {
+							url =  './assets/' + url;
+						}
+						
+						//linked assets
+						if (asset.assetType == "project") {
+							if (typeof(sLinkedAssets["p9c3526da-fd16-44d5-a338-307dde09a806_"+asset.fileId]) != "undefined") {	
+								url = sLinkedAssets["p9c3526da-fd16-44d5-a338-307dde09a806_"+asset.fileId];
+							}
+						}
+						
+						if (asset.assetType == "account") {
+							if (typeof(sLinkedAssets["p_"+asset.fileId]) != "undefined") {	
+								url = sLinkedAssets["p_"+asset.fileId];
+							}
+						}	
+						 
+						return url;
+					}
+				
+				
+				
+				
+				
+				//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);	
+				$(document).ready(function(){
+
+					
+					
+					
+					
+					
+					
+
+					
+					
+
+	
+					prx.inProtoApp = (typeof(getCookie('appbakerIosWrapper')) != "undefined" || typeof(getCookie('protoAppAndroidWrapper')) != "undefined");
+					prx.inProtoIOsApp = (typeof(getCookie('appbakerIosWrapper')) != "undefined");
+					prx.inProtoAndroidApp = (typeof(getCookie('protoAppAndroidWrapper')) != "undefined");
+
+					// STATUSBAR = TOP BAR
+					if (prx.statusbarapplies == true) { // didnt work without  == true!
+						prx.allowstatusbar = true;
+					} else {
+						prx.allowstatusbar = false;										
+					}
+					
+					
+						
+					if (!prx.inProtoApp && prx.allowstatusbar) {
+						// CHECK STATUSBAR ON IOS
+						var _agents = navigator.userAgent.toLowerCase().match(/(iphone|ipod|ipad)/g); // iOS
+						if (_agents) {
+							// if in safari, false, if in add to home, true
+							var _standalone = window.navigator.standalone ? true:false;
+							if(_standalone) {
+							 	// ANNAM 5.2.3 for ios7 translucent statusbars
+							 	// if standalone ios, always allow statusbar
+								//prx.allowstatusbar = false;
+								prx.allowstatusbar = true;
+								prx.devices[prx.device].statusbar_skin = 'default';
+								$('body').prepend("<style>.type-ios7-statusbar .ios7-statusbar-inner * { display: none; }</style>");
+							} else {
+						 		
+						 		
+						 		// if not fullscreen then disable statusbar
+						 		if(!($(window).width() == prx.devices[prx.device][prx.orientation][0] && $(window).height() == prx.devices[prx.device][prx.orientation][1])) {
+									prx.allowstatusbar = false;
+						 		}
+						 	}
+						}
+
+						// CHECK STATUSBAR ON ANDROID
+						
+						try {
+							_agents = navigator.userAgent.toLowerCase().match(/(android)/g); // Android					
+							if (_agents) {
+								// if not fullscreen then disable statusbar						
+						 		if(!($(window).width() == prx.devices[prx.device][prx.orientation][0] && $(window).height() == prx.devices[prx.device][prx.orientation][1])) {
+									prx.allowstatusbar = false;
+						 		}
+							}
+						} catch(err) {alert(err)}
+					}
+					
+
+					
+					// NAVIGATION BAR = BOTTOM BAR
+					if (prx.navigationbarapplies) {
+						prx.allownavigationbar = true;
+					} else {
+						prx.allownavigationbar = false;										
+					}
+					
+							
+					var _agents = navigator.userAgent.toLowerCase().match(/(android)/g);
+					if (_agents) {
+						try {
+							if(!($(window).width() == prx.devices[prx.device][prx.orientation][0] && $(window).height() == prx.devices[prx.device][prx.orientation][1])) {
+								prx.allownavigationbar = false;
+					 		} 
+				 		} catch(err) {alert(err)}
+				 		$('body').prepend("<style>.prx-page { position: absolute!important; }</style>");
+					}
+					
+					
+					
+					
+					$('#dragarea').css('width',$(window).width()+'px');
+					$('#dragarea').css('height',$(window).height()+'px');		
+					
+					$(window).resize(function() {
+						$('#dragarea').css('width',$(window).width()+'px');
+						$('#dragarea').css('height',$(window).height()+'px');		
+					})
+					
+
+										
+					
+					 
+					if (typeof(prx.xdata) != "undefined") { 
+						prx.xdata = $.toJSON(prx.xdata);
+					}
+					
+					prx.s3Links = {};
+					
+					prx.loadProject(prx.filename);
+					
+					
+						//MBP.hideUrlBar();
+					
+					
+				});	
+			</script>
+		
+	</head>
+	
+	<body oncontextmenu="return false;" class="player" style="overflow: hidden; width: 640px; height: 1136px;" id="mbd">
+
+		
+		
+		<div id="window-wrapper" style="width: 100%; height: 100%; overflow: hidden; position: relative">
+			<div id="dragarea" style="display:none;"></div>
+			<div id="statusbar"></div>
+			
+			<div class="prx-page" data-role="page" id="p-5" data-id="5"></div> <div class="prx-page" data-role="page" id="p-1" data-id="1"></div> <div class="prx-page" data-role="page" id="p-3" data-id="3"></div> <div class="prx-page" data-role="page" id="p-6" data-id="6"></div> <div class="prx-page" data-role="page" id="p-9" data-id="9"></div> <div class="prx-page" data-role="page" id="p-12" data-id="12"></div> <div class="prx-page" data-role="page" id="p-13" data-id="13"></div> <div class="prx-page" data-role="page" id="p-14" data-id="14"></div> <div class="prx-page" data-role="page" id="p-15" data-id="15"></div> <div class="prx-page" data-role="page" id="p-17" data-id="17"></div> <div class="prx-page" data-role="page" id="p-18" data-id="18"></div> <div class="prx-page" data-role="page" id="p-19" data-id="19"></div> 
+			<div id="navigationbar"></div>
+			
+			
+			<div id="overlay" style="position: absolute; top:40px;left:0px;"></div> <div id="trash" style="position: absolute; left:0px; display: none;"></div> 
+				<div id="loader-wrapper">
+					<div id="loader">
+						<span>Loading...</span>
+					</div>
+				</div>
+			
+		</div>
+
+		
+
+
+		
+		
+		
+	</body>	
+</html> 
