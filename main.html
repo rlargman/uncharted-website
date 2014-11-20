@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,7 +7,9 @@
   <link rel="stylesheet" href="css/grid.css"/>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+<title>Uncharted</title> 
 </head>
+  
 
 <body>
   <div id="container">
@@ -14,51 +17,58 @@
 
       <!-- Header Section -->
       <div id="header" class="module clearfix section">
-        <div class="col-1-3 nav">
-          <div class="col-1-3">
-            <a href="#team">Team</a>
+        <div class="col-1-1 nav">
+          <div class = "col-2-3">
+            <div class="col-1-4">
+              <a href="#intro">Intro</a>
+            </div>
+            <div class="col-1-4">
+              <a href="#team">Team</a>
+            </div>
+            <div class="col-1-4">
+              <a href="#concept">Concept Video</a>
+            </div>
           </div>
-          <div class="col-1-3">
-            <a href="#heuristic">Heuristic</a>
-          </div>
-          <div class="col-1-3">
-            <a href="#concept">Concept</a>
-          </div>
-        </div>
-        <div id="title" class="col-1-3">Uncharted</div>
-        <div class="col-1-3 nav">
-          <div class="col-1-3">
-            <a href="#hi-fi">Hi-fi</a>
-          </div>
-          <div class="col-1-3">
-            <a href="#lo-fi">Lo-fi<a>
-          </div>
-          <div class="col-1-3">
-            <a href="#med-fi">Medium-fi</a>
+          <div class="col-1-3" >
+            <div >
+              <a href = "#hi-fi" class = "final-product">Final Product</a>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Main Image Section -->
       <div class="module section">
-        <img src="images/earthporn1.jpg" id="main-image"/>
+        <img src="images/earthporn1.jpg" alt="images/earthporn1.jpg" id="main-image"/>
       </div>
+      <div class="vertical-line"></div>
 
       <!-- TODO -->
       <!-- Intro/Value Prop Section // Might just be part of the image section thing later -->
-      <div id="assignments" class="module section">
-        <a name = "valueprop"></a>
+      <div id="assignments" class="module section clearfix">
+        <a name = "intro"></a>
         <div class="section-header">Introduction</div>
-      </div>
+        <div class ="col-1-1" id = "value-prop-text">
+          <span>
+            Uncharted is a fun and useful tool to help 20-somethings jumpstart their travel plans.
+          </span>
+        </div>
+        <div class ="col-1-1" id = "description-text">
+          <span>
+            Travel planning can be an overwhelming and tedious process. We set out to build a tool that makes the planning process as fun and exciting as exploring new places in person. In our Contextual Inquiry, we found that most college-aged travelers do not use or rely on any guide books or websites. We designed Uncharted to help students in the initial planning phase, choosing a destination and jumpstarting the logistics. Uncharted allows you to browse through snapshots of destinations around the world, and view details about things to do and where to stay in these locations. Enjoy!
+          </span>
+        </div>
 
+      </div>
+      <div class="vertical-line"></div>
       <!-- Team Section -->
-      <div id="team" class="module section" name="team">
+      <div id="team" class="module section">
         <div class="section-header">Team</div>
         <div class="clearfix">
           <div class="col-1-4">
             <div class="team-desc">
               <div>
-                <img src="images/chocolate_chip_cookie.jpg" class="team-pic">
+                <img src="images/kate.jpg" class="team-pic" alt="images/earthporn1.jpg">
               </div>
               <div class="name">Kate Wendell</div>
               <div>Here's some blurb stuff about the role I had blah blah</div>
@@ -67,7 +77,7 @@
           <div class="col-1-4">
             <div class="team-desc">
               <div>
-                <img src="images/snickerdoodle-cookie.png" class="team-pic">
+                <img src="images/matt.jpg" class="team-pic" alt="images/earthporn1.jpg">
               </div>
               <div class="name">Matt Taylor</div>
               <div>Here's some blurb stuff about the role I had blah blah</div>
@@ -76,7 +86,7 @@
           <div class="col-1-4">
             <div class="team-desc">
               <div>
-                <img src="images/blondie_cookie.jpg" class="team-pic">
+                <img src="images/blondie_cookie.jpg" class="team-pic" alt="images/earthporn1.jpg">
               </div>
               <div class="name">Moustafa Asfour</div>
               <div>Here's some blurb stuff about the role I had blah blah</div>
@@ -85,7 +95,7 @@
           <div class="col-1-4">
             <div class="team-desc">
               <div>
-                <img src="images/double_chocolate_cookie.jpg" class="team-pic">
+                <img src="images/raissa.jpg" class="team-pic" alt="images/earthporn1.jpg">
               </div>
               <div class="name">Raissa Largman</div>
               <div>
@@ -95,21 +105,44 @@
             </div>
           </div>
         </div>
+        <div class="vertical-line"></div>
       </div>
+
+      <!-- Poster Section -->
+      <div id="poster" class="module section clearfix">
+        <a name = "poster"></a>
+        <div class="section-header">(#7) Poster</div>
+        <div class="clearfix">
+          <div class="col-1-1">
+          </div>
+          <div class="col-1-2" style = "margin-left:25%">
+              <div class="assignment-first">
+                  <a href="#poster">
+                      <div class="assignment" id="pic25">
+                          <span class="assignment-text">Poster</span>
+                      </div>
+                  </a>
+              </div>
+          </div>
+        </div>
+        <div class="vertical-line"></div>
+      </div>
+
 
       <!-- Hi-fi Prototype Section -->
       <div id="hi-fi-prototype" class="module section clearfix">
         <a name = "hi-fi"></a>
-        <div class="section-header">(#5) Hi-fi Prototype</div>
+        <div class="section-header">(#6) Hi-fi Prototype</div>
         <div class="clearfix">
           <div class="col-1-1">
               <div class="icon-button">
                   <div class="icon-button-image-wrapper">
-                    <img class="icon-button-image" src="images/icons/conception_icon/conception.png" />
+                    <a href = "#hi-fi">
+                      <img class="icon-button-image" src="images/icons/diamond_icon/diamond_icon.png" alt="images/earthporn1.jpg">
+                    </a>
                   </div>
                   <div class="icon-button-text">
-                      Click on the button above to see our hi-fi prototype. We can say some other things if
-                      we want. I'm just trying to write more nonsense up in here.
+                      Click on the button above to see our High-Fidelity Final Prototype.
                   </div>
               </div>
           </div>
@@ -155,6 +188,26 @@
         <div class="vertical-line"></div>
       </div>
 
+      <!-- Heuristic Section -->
+      <div id="heuristic" class="module section clearfix">
+        <a name = "heuristic"></a>
+        <div class="section-header">(#5) Heuristic Evaluation</div>
+        <div class="clearfix">
+          <div class="col-1-1">
+          </div>
+          <div class="col-1-2" style = "margin-left:25%">
+              <div class="assignment-first">
+                  <a href="documents/UnchartedConceptVideo.pdf">
+                      <div class="assignment" id="pic24">
+                          <span class="assignment-text">Evaluation</span>
+                      </div>
+                  </a>
+              </div>
+          </div>
+        </div>
+        <div class="vertical-line"></div>
+      </div>
+
       <!-- Medium-fi Prototype Section -->
       <div id="med-fi-prototype" class="module section clearfix">
         <a name = "med-fi"></a>
@@ -164,12 +217,11 @@
               <div class="icon-button">
                   <div class="icon-button-image-wrapper">
                     <a href = "med-fiprototype/prototype.html">
-                      <img class="icon-button-image" src="images/icons/conception_icon/conception.png" />
+                      <img class="icon-button-image" src="images/icons/crystal_icon/crystal_icon.png" alt="images/earthporn1.jpg">
                     </a>
                   </div>
                   <div class="icon-button-text">
-                      Click on the button above to see our hi-fi prototype. We can say some other things if
-                      we want. I'm just trying to write more nonsense up in here.
+                      Click on the button above to see our Medium-Fidelity Prototype. This will give a general description of what our final product will look like.
                   </div>
               </div>
           </div>
@@ -224,12 +276,11 @@
               <div class="icon-button">
                   <div class="icon-button-image-wrapper">
                     <a href = "lo-fiprototype/lo-fiproto.jpg">
-                      <img class="icon-button-image" src="images/icons/conception_icon/conception.png" />
+                      <img class="icon-button-image" src="images/icons/rock_icon/rock_icon.png" alt="images/earthporn1.jpg">
                     </a>
                   </div>
                   <div class="icon-button-text">
-                      Click on the button above to see our hi-fi prototype. We can say some other things if
-                      we want. I'm just trying to write more nonsense up in here.
+                    Click on the button above to see our Low-Fidelity Prototype. This will give a general description of how we want to accomplish individual tasks
                   </div>
               </div>
           </div>
@@ -281,10 +332,16 @@
         <div class="section-header">(#2) Concept Video and Sketches</div>
         <div class="clearfix">
           <div class="col-1-1">
-<!--             <iframe width="560" height="315" src="//www.youtube.com/embed/-uS8jAZApJ4" frameborder="0" allowfullscreen></iframe> -->
-
-        <iframe width="640" height="360" src="documents/UnchartedConceptVideo.mp4" frameborder="0" allowfullscreen controls>
-        </iframe>
+              <div class="icon-button">
+                  <div class="icon-button-image-wrapper">
+                    <a href = "http://player.vimeo.com/video/109165485">
+                      <img class="icon-button-image" src="images/icons/video_icon/video_icon.png" alt="images/earthporn1.jpg">
+                    </a>
+                  </div>
+                  <div class="icon-button-text">
+                      Click on the button above to see our Concept Video. This video will show what we want Uncharted to accomplish.
+                  </div>
+              </div>
           </div>
           <div class="col-1-2" style = "margin-left:25%">
               <div class="assignment-first">
@@ -304,17 +361,6 @@
         <a name = "contextual"></a>
         <div class="section-header">(#1) Contextual Inquiry and Task Analysis</div>
         <div class="clearfix">
-          <div class="col-1-1">
-              <div class="icon-button">
-                  <div class="icon-button-image-wrapper">
-                    <img class="icon-button-image" src="images/icons/conception_icon/conception.png" />
-                  </div>
-                  <div class="icon-button-text">
-                      Click on the button above to see our hi-fi prototype. We can say some other things if
-                      we want. I'm just trying to write more nonsense up in here.
-                  </div>
-              </div>
-          </div>
           <div class="col-1-2">
               <div class="assignment-first">
                   <a href="documents/UnchartedContextualInquiry.pdf">
@@ -356,6 +402,11 @@
         </div>
         <div class="vertical-line"></div>
       </div>
+
+
+
+
+
 
 
 
